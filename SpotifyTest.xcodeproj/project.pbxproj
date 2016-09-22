@@ -14,6 +14,8 @@
 		F0BFF0871D93B1C500920EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0BFF0861D93B1C500920EEE /* Assets.xcassets */; };
 		F0BFF08A1D93B1C500920EEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0BFF0881D93B1C500920EEE /* LaunchScreen.storyboard */; };
 		F0BFF0951D93B1C500920EEE /* SpotifyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFF0941D93B1C500920EEE /* SpotifyTestTests.swift */; };
+		F0BFF0A01D93B46A00920EEE /* backdrop.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BFF09F1D93B46A00920EEE /* backdrop.png */; };
+		F0BFF0A71D93B67500920EEE /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BFF0A61D93B67500920EEE /* Spotify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		F0BFF0901D93B1C500920EEE /* SpotifyTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BFF0941D93B1C500920EEE /* SpotifyTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyTestTests.swift; sourceTree = "<group>"; };
 		F0BFF0961D93B1C500920EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0BFF09F1D93B46A00920EEE /* backdrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backdrop.png; path = Resources/Images/backdrop.png; sourceTree = "<group>"; };
+		F0BFF0A61D93B67500920EEE /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = Resources/Frameworks/Spotify.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BFF0A71D93B67500920EEE /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +84,12 @@
 		F0BFF07B1D93B1C500920EEE /* SpotifyTest */ = {
 			isa = PBXGroup;
 			children = (
-				F0BFF07C1D93B1C500920EEE /* AppDelegate.swift */,
-				F0BFF07E1D93B1C500920EEE /* ViewController.swift */,
-				F0BFF0801D93B1C500920EEE /* Main.storyboard */,
+				F0BFF0A51D93B66900920EEE /* Frameworks */,
+				F0BFF0A41D93B5E400920EEE /* Delegates */,
+				F0BFF0A31D93B5D700920EEE /* Storyboards */,
+				F0BFF0A21D93B5C700920EEE /* Controllers */,
+				F0BFF0A11D93B47300920EEE /* Resources */,
 				F0BFF0861D93B1C500920EEE /* Assets.xcassets */,
-				F0BFF0881D93B1C500920EEE /* LaunchScreen.storyboard */,
 				F0BFF08B1D93B1C500920EEE /* Info.plist */,
 				F0BFF0831D93B1C500920EEE /* SpotifyTest.xcdatamodeld */,
 			);
@@ -97,6 +103,47 @@
 				F0BFF0961D93B1C500920EEE /* Info.plist */,
 			);
 			path = SpotifyTestTests;
+			sourceTree = "<group>";
+		};
+		F0BFF0A11D93B47300920EEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0BFF09F1D93B46A00920EEE /* backdrop.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F0BFF0A21D93B5C700920EEE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0BFF07E1D93B1C500920EEE /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F0BFF0A31D93B5D700920EEE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F0BFF0881D93B1C500920EEE /* LaunchScreen.storyboard */,
+				F0BFF0801D93B1C500920EEE /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F0BFF0A41D93B5E400920EEE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F0BFF07C1D93B1C500920EEE /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		F0BFF0A51D93B66900920EEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0BFF0A61D93B67500920EEE /* Spotify.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0BFF08A1D93B1C500920EEE /* LaunchScreen.storyboard in Resources */,
+				F0BFF0A01D93B46A00920EEE /* backdrop.png in Resources */,
 				F0BFF0871D93B1C500920EEE /* Assets.xcassets in Resources */,
 				F0BFF0821D93B1C500920EEE /* Main.storyboard in Resources */,
 			);
@@ -333,6 +381,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpotifyTest/Resources/Frameworks",
+				);
 				INFOPLIST_FILE = SpotifyTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Individual.SpotifyTest;
@@ -344,6 +396,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpotifyTest/Resources/Frameworks",
+				);
 				INFOPLIST_FILE = SpotifyTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Individual.SpotifyTest;
