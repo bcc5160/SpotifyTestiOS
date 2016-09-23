@@ -16,6 +16,8 @@
 		F0BFF0951D93B1C500920EEE /* SpotifyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFF0941D93B1C500920EEE /* SpotifyTestTests.swift */; };
 		F0BFF0A01D93B46A00920EEE /* backdrop.png in Resources */ = {isa = PBXBuildFile; fileRef = F0BFF09F1D93B46A00920EEE /* backdrop.png */; };
 		F0BFF0A71D93B67500920EEE /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BFF0A61D93B67500920EEE /* Spotify.framework */; };
+		F0D518B11D95B43B008FF38D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D518B01D95B43B008FF38D /* AVFoundation.framework */; };
+		F0D518B31D95D5E5008FF38D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D518B21D95D5E5008FF38D /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		F0BFF0961D93B1C500920EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0BFF09F1D93B46A00920EEE /* backdrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backdrop.png; path = Resources/Images/backdrop.png; sourceTree = "<group>"; };
 		F0BFF0A61D93B67500920EEE /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = Resources/Frameworks/Spotify.framework; sourceTree = "<group>"; };
+		F0D518B01D95B43B008FF38D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F0D518B21D95D5E5008FF38D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D518B31D95D5E5008FF38D /* SystemConfiguration.framework in Frameworks */,
+				F0D518B11D95B43B008FF38D /* AVFoundation.framework in Frameworks */,
 				F0BFF0A71D93B67500920EEE /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +72,7 @@
 		F0BFF0701D93B1C500920EEE = {
 			isa = PBXGroup;
 			children = (
+				F0D518B21D95D5E5008FF38D /* SystemConfiguration.framework */,
 				F0BFF07B1D93B1C500920EEE /* SpotifyTest */,
 				F0BFF0931D93B1C500920EEE /* SpotifyTestTests */,
 				F0BFF07A1D93B1C500920EEE /* Products */,
@@ -141,6 +148,7 @@
 		F0BFF0A51D93B66900920EEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0D518B01D95B43B008FF38D /* AVFoundation.framework */,
 				F0BFF0A61D93B67500920EEE /* Spotify.framework */,
 			);
 			name = Frameworks;
@@ -450,6 +458,7 @@
 				F0BFF09B1D93B1C500920EEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0BFF09C1D93B1C500920EEE /* Build configuration list for PBXNativeTarget "SpotifyTestTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +467,7 @@
 				F0BFF09E1D93B1C500920EEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
