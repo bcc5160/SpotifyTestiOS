@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F074C9511D98A024008BD2C1 /* Objective-CBridgingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F074C9501D98A024008BD2C1 /* Objective-CBridgingHeader.m */; };
 		F0BFF07D1D93B1C500920EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFF07C1D93B1C500920EEE /* AppDelegate.swift */; };
 		F0BFF07F1D93B1C500920EEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BFF07E1D93B1C500920EEE /* ViewController.swift */; };
 		F0BFF0821D93B1C500920EEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0BFF0801D93B1C500920EEE /* Main.storyboard */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F074C94F1D98A024008BD2C1 /* SpotifyTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotifyTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		F074C9501D98A024008BD2C1 /* Objective-CBridgingHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Objective-CBridgingHeader.m"; sourceTree = "<group>"; };
 		F0BFF0791D93B1C500920EEE /* SpotifyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BFF07C1D93B1C500920EEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0BFF07E1D93B1C500920EEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +75,6 @@
 		F0BFF0701D93B1C500920EEE = {
 			isa = PBXGroup;
 			children = (
-				F0D518B21D95D5E5008FF38D /* SystemConfiguration.framework */,
 				F0BFF07B1D93B1C500920EEE /* SpotifyTest */,
 				F0BFF0931D93B1C500920EEE /* SpotifyTestTests */,
 				F0BFF07A1D93B1C500920EEE /* Products */,
@@ -99,6 +101,8 @@
 				F0BFF0861D93B1C500920EEE /* Assets.xcassets */,
 				F0BFF08B1D93B1C500920EEE /* Info.plist */,
 				F0BFF0831D93B1C500920EEE /* SpotifyTest.xcdatamodeld */,
+				F074C9501D98A024008BD2C1 /* Objective-CBridgingHeader.m */,
+				F074C94F1D98A024008BD2C1 /* SpotifyTest-Bridging-Header.h */,
 			);
 			path = SpotifyTest;
 			sourceTree = "<group>";
@@ -148,6 +152,7 @@
 		F0BFF0A51D93B66900920EEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0D518B21D95D5E5008FF38D /* SystemConfiguration.framework */,
 				F0D518B01D95B43B008FF38D /* AVFoundation.framework */,
 				F0BFF0A61D93B67500920EEE /* Spotify.framework */,
 			);
@@ -256,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F074C9511D98A024008BD2C1 /* Objective-CBridgingHeader.m in Sources */,
 				F0BFF0851D93B1C500920EEE /* SpotifyTest.xcdatamodeld in Sources */,
 				F0BFF07F1D93B1C500920EEE /* ViewController.swift in Sources */,
 				F0BFF07D1D93B1C500920EEE /* AppDelegate.swift in Sources */,
@@ -389,14 +395,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SpotifyTest/Resources/Frameworks",
 				);
 				INFOPLIST_FILE = SpotifyTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Individual.SpotifyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpotifyTest/SpotifyTest-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -404,14 +415,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SpotifyTest/Resources/Frameworks",
 				);
 				INFOPLIST_FILE = SpotifyTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Individual.SpotifyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpotifyTest/SpotifyTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
