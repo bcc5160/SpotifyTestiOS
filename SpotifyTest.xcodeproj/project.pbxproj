@@ -406,7 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Individual.SpotifyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SpotifyTest/SpotifyTest-Bridging-Header.h";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "SpotifyTest/SpotifyTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
